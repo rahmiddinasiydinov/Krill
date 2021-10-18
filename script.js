@@ -32,6 +32,8 @@ counterForm.addEventListener('submit', (e)=>{
      ShChNg(newArr, 'c', 'h', 'ч');
      ShChNg(newArr, 'O', '\'', 'Ў');
      ShChNg(newArr, 'o', '\'', 'ў'); 
+     ShChNg(newArr, 'G', '\'', 'Ғ'); 
+     ShChNg(newArr, 'g', '\'', 'ғ'); 
      }
 
 
@@ -48,6 +50,9 @@ counterForm.addEventListener('submit', (e)=>{
         
         
         switch(code){
+            case 39:
+            elem = 'Ъ';
+            chosen.push(elem) ;break;
             case 65:
             elem = 'А';
             chosen.push(elem) ;break;
