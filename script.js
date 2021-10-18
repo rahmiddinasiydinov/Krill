@@ -51,7 +51,7 @@ counterForm.addEventListener('submit', (e)=>{
         
         switch(code){
             case 39:
-            elem = 'Ъ';
+            elem = 'ъ';
             chosen.push(elem) ;break;
             case 65:
             elem = 'А';
