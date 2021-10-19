@@ -14,13 +14,10 @@ counterForm.addEventListener('submit', (e)=>{
      function ShChNg( arr, char2, char3, char4){
          let count = 0;
         arr.forEach(elem =>{
-
             if(elem == char2 ){ 
                 // let num = newArr.indexOf(elem);
                 let nextLetter = newArr[count+1];
-                console.log(nextLetter);
                 if(nextLetter == char3){
-                    console.log(' yes')
                     newArr.splice(count, 2, char4 );
                 } } 
             count++;
@@ -34,7 +31,9 @@ counterForm.addEventListener('submit', (e)=>{
      ShChNg(newArr, 't', 's', 'ц'); 
      ShChNg(newArr, 'T', 's', 'Ц'); 
      ShChNg(newArr, 'O', '\'', 'Ў');
+     ShChNg(newArr, 'O', '‘', 'Ў');
      ShChNg(newArr, 'o', '\'', 'ў'); 
+     ShChNg(newArr, 'o', '‘', 'ў'); 
      ShChNg(newArr, 'G', '\'', 'Ғ'); 
      ShChNg(newArr, 'g', '\'', 'ғ'); 
      ShChNg(newArr, 'Y', 'a', 'Я'); 
@@ -43,7 +42,7 @@ counterForm.addEventListener('submit', (e)=>{
      ShChNg(newArr, 'y', 'u', 'ю'); 
      ShChNg(newArr, 'Y', 'o', 'Ё'); 
      ShChNg(newArr, 'y', 'o', 'ё'); 
-console.log(newArr);
+
 
 
      
