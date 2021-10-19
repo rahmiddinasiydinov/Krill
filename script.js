@@ -227,6 +227,7 @@ counterForm.addEventListener('submit', (e)=>{
 
 
 //remove null
+console.log('removing nulls');
 let array = [1, 2, null, 7, 8, null, 3, null , 'salom'];
 console.log(array);
 function  remove(arr){
