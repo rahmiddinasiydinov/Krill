@@ -36,6 +36,10 @@ counterForm.addEventListener('submit', (e)=>{
      ShChNg(newArr, 'o', '\'', 'ў'); 
      ShChNg(newArr, 'G', '\'', 'Ғ'); 
      ShChNg(newArr, 'g', '\'', 'ғ'); 
+     ShChNg(newArr, 'Y', 'a', 'Я'); 
+     ShChNg(newArr, 'y', 'a', 'я'); 
+     ShChNg(newArr, 'Y', 'u', 'Ю'); 
+     ShChNg(newArr, 'y', 'u', 'ю'); 
      
      }
 
