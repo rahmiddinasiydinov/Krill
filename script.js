@@ -19,12 +19,11 @@ counterForm.addEventListener('submit', (e)=>{
             if(char2 == nextLetter){
             
                 newArr.splice(num,2, changed );
-                console.log('ok');
+              
          
             }
         } 
      }
-
      for (let i = 0; i < newArr.length; i++) {
      ShChNg(newArr, 'S', 'h', 'Ш');
      ShChNg(newArr, 's', 'h', 'ш');
@@ -220,3 +219,36 @@ counterForm.addEventListener('submit', (e)=>{
     chosen = chosen.join('');
     counterResult.innerHTML=`${chosen}`
 })
+
+
+
+
+
+
+
+//remove null
+let array = [1, 2, null, 7, 8, null, 3, null , 'salom'];
+console.log(array);
+function  remove(arr){
+    if(arr.includes(null)){
+        let index = arr.indexOf(null);
+        arr.splice(index, 1);
+    }
+}
+function removeNull(Arr){
+    let length =Arr.length;
+let i = 0;
+for(i ; i<length; i++ ){
+    remove(Arr)
+}console.log(Arr);
+}
+removeNull(array);
+
+
+//subarrys
+console.log('removing sub arrays!');
+
+let arr = [1, [2, [3, [4,5]]]];
+console.log(arr);
+let result = arr.flat(Infinity)
+console.log(result);
